@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Gambar</title>
+</head>
+<body>
+    <h1>Upload Gambar</h1>
+    <form action="/remove-bg" method="post" enctype="multipart/form-data">
+        <label>Remove Background:</label>
+        <input type="file" name="image" required>
+        <button type="submit">Hapus Background</button>
+    </form>
+    <br>
+    <form action="/ocr" method="post" enctype="multipart/form-data">
+        <label>OCR (Ekstrak Teks):</label>
+        <input type="file" name="image" required>
+        <button type="submit">Ekstrak Teks</button>
+    </form>
+</body>
+</html>
